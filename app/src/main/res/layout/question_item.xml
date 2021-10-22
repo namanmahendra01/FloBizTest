@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/card2"
+    android:layout_weight="5"
+    app:contentPadding="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentRl">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_gravity="center_vertical"
+    android:layout_height="50dp"
+    android:id="@+id/profileIv"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="what is android cycle?"
+    android:paddingStart="5dp"
+    android:id="@+id/questionTv"
+    android:layout_toEndOf="@+id/profileIv"
+    android:textStyle="bold"
+    android:maxLines="2"
+    android:textSize="20sp"
+    tools:ignore="RtlSymmetry" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:layout_below="@id/questionTv"
+            android:id="@+id/username"
+            android:paddingStart="5dp"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/profileIv"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="posted on: 05-05-2021"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/username"
+            android:id="@+id/dateTv"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="AD"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:src="@drawable/search_background"
+        android:visibility="visible"
+        android:id="@+id/adIv"/>
+</androidx.cardview.widget.CardView>
